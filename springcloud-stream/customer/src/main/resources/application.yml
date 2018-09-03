@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: springcloud-stream-consumer
+  rabbitmq:
+    addresses: 118.31.20.148
+    port: 5672
+    username: hupeng
+    password: hupeng
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+        register_input:
+          destination: send-email-channel
+          content-type: application/json
+        statistics_input:
+          destination: reported-data-channel
+          content-type: application/json
+        group-channel:
+          group-name: receiver-group-1
+server:
+  port: 5720
