@@ -11,6 +11,7 @@
         <module>springboot-event</module>
         <module>springcloud-stream</module>
         <module>springboot-mybatisplus</module>
+        <module>springboot-security</module>
     </modules>
 
 
